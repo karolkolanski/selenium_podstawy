@@ -13,8 +13,10 @@ driver.get("http://duckduckgo.com")
 driver.maximize_window()
 
 # Odszukanie elementu - pole wyszukiwania
-element = driver.find_element_by_id('search_form_input_homepage')
-print(type(element))
-print(element.tag_name)
+# element = driver.find_element_by_id('search_form_input_homepage')  - selenium do 2021 roku
+element = driver.find_element(By.ID, 'search_form_input_homepage')  #- selenium 4
 
-driver.quit()
+# Wpisz teskt 'tester ALK' w pole wyszukiwania
+element.send_keys("tester ALK")
+
+#driver.quit()
