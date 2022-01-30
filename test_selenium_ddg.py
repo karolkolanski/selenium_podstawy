@@ -17,7 +17,7 @@ element.send_keys("tester kozminski")
 element.submit()
 
 # "lamerskie" rozwiązanie
-sleep(4)
+# sleep(4)
 
 # Bardziej profesjonalne rozwiązanie
 # Maksymalny czas oczekiwania na element
